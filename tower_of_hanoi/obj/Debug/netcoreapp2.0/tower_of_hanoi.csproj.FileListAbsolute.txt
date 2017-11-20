@@ -1,0 +1,11 @@
+/Users/dannynielsen/Projects/tower_of_hanoi/tower_of_hanoi/bin/Debug/netcoreapp2.0/tower_of_hanoi.deps.json
+/Users/dannynielsen/Projects/tower_of_hanoi/tower_of_hanoi/bin/Debug/netcoreapp2.0/tower_of_hanoi.runtimeconfig.json
+/Users/dannynielsen/Projects/tower_of_hanoi/tower_of_hanoi/bin/Debug/netcoreapp2.0/tower_of_hanoi.runtimeconfig.dev.json
+/Users/dannynielsen/Projects/tower_of_hanoi/tower_of_hanoi/bin/Debug/netcoreapp2.0/tower_of_hanoi.dll
+/Users/dannynielsen/Projects/tower_of_hanoi/tower_of_hanoi/bin/Debug/netcoreapp2.0/tower_of_hanoi.pdb
+/Users/dannynielsen/Projects/tower_of_hanoi/tower_of_hanoi/obj/Debug/netcoreapp2.0/tower_of_hanoi.csprojResolveAssemblyReference.cache
+/Users/dannynielsen/Projects/tower_of_hanoi/tower_of_hanoi/obj/Debug/netcoreapp2.0/tower_of_hanoi.csproj.CoreCompileInputs.cache
+/Users/dannynielsen/Projects/tower_of_hanoi/tower_of_hanoi/obj/Debug/netcoreapp2.0/tower_of_hanoi.AssemblyInfoInputs.cache
+/Users/dannynielsen/Projects/tower_of_hanoi/tower_of_hanoi/obj/Debug/netcoreapp2.0/tower_of_hanoi.AssemblyInfo.cs
+/Users/dannynielsen/Projects/tower_of_hanoi/tower_of_hanoi/obj/Debug/netcoreapp2.0/tower_of_hanoi.dll
+/Users/dannynielsen/Projects/tower_of_hanoi/tower_of_hanoi/obj/Debug/netcoreapp2.0/tower_of_hanoi.pdb
