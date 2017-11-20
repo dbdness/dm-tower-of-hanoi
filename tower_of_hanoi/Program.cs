@@ -2,6 +2,12 @@
 
 namespace tower_of_hanoi
 {
+    /// <summary>
+    /// This is a very basic implementation of the recursion logic in the Tower of Hanoi game.
+    /// I call the three towers/pegs Source, Destination and Auxilliary.
+    /// 
+    /// Made by Danny.
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
