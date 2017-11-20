@@ -6,65 +6,59 @@ namespace tower_of_hanoi
     {
         static void Main(string[] args)
         {
-            Move(3, "Source", "Destination", "Auxilliary");
-            //PrintTowers();
-            //PrintDiscs(3);
+            int amountOfDiscs = GetUserInput();
+            Console.WriteLine("");
+            MakeMove(amountOfDiscs, "Source", "Destination", "Auxilliary");
+            double amountOfMoves = Math.Pow(2, amountOfDiscs) - 1;
+            Console.WriteLine("Done!");
+            Console.WriteLine("\nAmount of moves used to complete: " + amountOfMoves);
         }
 
-        private static void Move(int disc, String source, String dest, String aux){
-            if(disc == 1){
-                Console.WriteLine(source + "-> " + dest);
-            }
-            else{
-                Move(disc -1, source, aux, dest);
-                Console.WriteLine(source + "-> " + dest);
-                Move(disc -1, aux, dest, source);
-            }
-        }
-
-        private static void PrintTowers(){
-            for (int i = 0; i < 5; i++){
-                Console.Write(" |");
-                Console.Write("\t");
-                Console.Write(" |");
-                Console.Write("\t");
-                Console.Write(" |");
-                Console.WriteLine("");
-            }
-        }
-
-        private static void PrintDiscs(int amount){
-            for (int i = 0; i <= amount; i++)
+        /// <summary>
+        /// Moves a dics from one tower to the other.
+        /// </summary>
+        /// <param name="discs">Amount of discs to move.</param>
+        /// <param name="source">Source tower.</param>
+        /// <param name="dest">Destination tower.</param>
+        /// <param name="aux">Auxilliary tower.</param>
+        private static void MakeMove(int discs, String source, String dest, String aux)
+        {
+            if (discs == 1)
             {
-                PrintDisc(i);
+                Console.WriteLine("Moved disc from " + source + " to " + dest);
             }
-        }
-
-        private static void PrintDisc(int size){
-            for (int i = 0; i < size; i++)
+            else
             {
-                Console.Write("###");
+                MakeMove(discs - 1, source, aux, dest);
+                Console.WriteLine("Moved disc from " + source + " to " + dest);
+                MakeMove(discs - 1, aux, dest, source);
             }
-            Console.WriteLine();
-            Console.Write(" ");
         }
 
-        private static void MoveDisc(int size, String tower){
-            switch(tower){
-                case "Source":
-                    PrintDisc(size);
+        /// <summary>
+        /// Gets the user input ie. amount discs to use.
+        /// </summary>
+        /// <returns>The user input.</returns>
+        private static int GetUserInput()
+        {
+            int input;
+            while (true)
+            {
+                Console.WriteLine("Enter amount of discs:");
+                try
+                {
+                    input = int.Parse(Console.ReadLine());
                     break;
-                case "Destination":
-                    Console.Write("\t");
-                    PrintDisc(size);
-                    break;
-                case "Auxilliary":
-                    Console.Write("\t\t");
-                    PrintDisc(size);
-                    break;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("You didn't correctly enter an integer. Try again:");
+                    continue;
+                }
+
             }
 
+            return input;
         }
-
     }
 }
